@@ -9,11 +9,23 @@ import { environment } from 'src/environment/environment'; //da wo unser schmutz
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app'; //damit mein angular mit firebase klar kommt
 import { provideAuth, getAuth } from '@angular/fire/auth'; //damit mein angular mit authetication klar kommt
 import { provideFirestore, getFirestore } from '@angular/fire/firestore'; //damit mein angular firestore zeugs lesen kann
-import { provideStorage, getStorage } from '@angular/fire/storage'; //damit mein angular storage zeugs lesen kann
+import { provideStorage, getStorage } from '@angular/fire/storage';
+import { LoginComponent } from './components/auth/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ImprintComponent } from './components/policity/imprint/imprint.component';
+import { DataProtectionComponent } from './components/policity/data-protection/data-protection.component';
+import { AlarmComponent } from './components/push-message/alarm/alarm.component';
+import { PushMessageComponent } from './components/push-message/push-message.component'; //damit mein angular storage zeugs lesen kann
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    DashboardComponent,
+    ImprintComponent,
+    DataProtectionComponent,
+    AlarmComponent,
+    PushMessageComponent
   ],
   imports: [
     BrowserModule,
