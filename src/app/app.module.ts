@@ -16,7 +16,11 @@ import { ImprintComponent } from './components/policity/imprint/imprint.componen
 import { DataProtectionComponent } from './components/policity/data-protection/data-protection.component';
 import { PushMessageComponent } from './components/push-message/push-message.component';
 import { StatusbarComponent } from './components/statusbar/statusbar.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component'; //damit mein angular storage zeugs lesen kann
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { ForgotPasswordComponent } from './components/auth/forgot-password/forgot-password.component';
+import { RegisterComponent } from './components/auth/register/register.component';
+import { VerificationComponent } from './components/auth/verification/verification.component';
+import { ResponseComponent } from './components/auth/response/response.component'; //damit mein angular storage zeugs lesen kann
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { SidebarComponent } from './components/sidebar/sidebar.component'; //dam
     DataProtectionComponent,
     PushMessageComponent,
     StatusbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    ForgotPasswordComponent,
+    RegisterComponent,
+    VerificationComponent,
+    ResponseComponent,
   ],
   imports: [
     BrowserModule,
