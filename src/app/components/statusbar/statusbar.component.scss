@@ -1,0 +1,7 @@
+@import "../../../style/color.scss";
+
+.mainContent {
+    background-color: $colorPrimary;
+    height: 100px;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.25);
+}
