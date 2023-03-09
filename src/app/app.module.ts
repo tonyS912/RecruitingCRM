@@ -14,7 +14,6 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ImprintComponent } from './components/policity/imprint/imprint.component';
 import { DataProtectionComponent } from './components/policity/data-protection/data-protection.component';
-import { AlarmComponent } from './components/push-message/alarm/alarm.component';
 import { PushMessageComponent } from './components/push-message/push-message.component'; //damit mein angular storage zeugs lesen kann
 
 @NgModule({
@@ -24,7 +23,6 @@ import { PushMessageComponent } from './components/push-message/push-message.com
     DashboardComponent,
     ImprintComponent,
     DataProtectionComponent,
-    AlarmComponent,
     PushMessageComponent
   ],
   imports: [
