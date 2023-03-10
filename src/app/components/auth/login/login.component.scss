@@ -19,6 +19,17 @@
         outline: none;
     }
 
+    .mat-mdc-card {
+      box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px !important;
+    }
+
+    .mat-mdc-card-title {
+      text-shadow: 1px 1px 2px $colorLinkVariant;
+      letter-spacing: 2px;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
     mat-card {
         display: flex;
         flex-direction: column;
