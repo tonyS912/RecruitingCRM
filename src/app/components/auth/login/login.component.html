@@ -1,1 +1,35 @@
-<p>login works!</p>
+<div class="contentMain">
+    <button class="registry">Regestrieren</button>
+    <mat-card>
+        <form (ngSubmit)="loginAsUser()" [formGroup]="user">
+            <mat-card-content>
+                <mat-form-field appearance="outline">
+                    <mat-label>E-Mail</mat-label>
+                    <input matInput formControlName="email">
+                    <mat-error *ngIf="user.invalid">error</mat-error>
+                    <button mat-icon-button matSuffix>
+                        <mat-icon>
+                            mail
+                        </mat-icon>
+                    </button>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Passwort</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+                    <mat-error *ngIf="user.invalid">error</mat-error>
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>
+                            eye
+                        </mat-icon>
+                    </button>
+                </mat-form-field>
+                <div class="formLinks">
+                    <a routerLink="/reset">Passwort vergessen</a>
+                    <a (click)="loginAsGuest()">Gast anmelden</a>
+                </div>
+                <button [disabled]="true" class="submitButton" mat-raised-button>Anmelden</button>
+            </mat-card-content>
+        </form>
+    </mat-card>
+</div>
