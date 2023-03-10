@@ -1,1 +1,23 @@
-<p>response works!</p>
+<div class="contentMain">
+  <button class="registry">Login</button>
+  <mat-card>
+    <mat-card-title>Neues Passwort</mat-card-title>
+      <form (ngSubmit)="loginAsUser()" [formGroup]="user">
+          <mat-card-content>
+              <mat-form-field appearance="outline">
+                  <mat-label>Neues Passwort</mat-label>
+                  <input matInput formControlName="email">
+                  <mat-error *ngIf="user.invalid">error</mat-error>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                  <mat-label>Passwort Wiederholen</mat-label>
+                  <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+                  <mat-error *ngIf="user.invalid">error</mat-error>
+              </mat-form-field>
+
+              <button [disabled]="true" class="submitButton" mat-raised-button>Abesenden</button>
+          </mat-card-content>
+      </form>
+  </mat-card>
+</div>
+
