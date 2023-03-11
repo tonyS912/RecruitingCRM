@@ -1,5 +1,5 @@
 <div class="contentMain">
-    <button class="registry">Regestrieren</button>
+    <button class="registry" routerLink="register">Regestrieren</button>
     <mat-card>
       <mat-card-title>Anmeldung</mat-card-title>
         <form (ngSubmit)="loginAsUser()" [formGroup]="user">
@@ -26,8 +26,9 @@
                     </button>
                 </mat-form-field>
                 <div class="formLinks">
-                    <a routerLink="/reset">Passwort vergessen</a>
-                    <a (click)="loginAsGuest()">Gast anmelden</a>
+                    <a routerLink="resetPassword">Passwort vergessen</a>
+                    <!-- !TODO: remove routerLink later -->
+                    <a (click)="loginAsGuest()" routerLink="dashboard">Gast anmelden</a>
                 </div>
                 <button [disabled]="true" class="submitButton" mat-raised-button>Anmelden</button>
             </mat-card-content>

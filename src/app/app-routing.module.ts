@@ -10,7 +10,7 @@ import { DataProtectionComponent } from './components/policity/data-protection/d
 import { ImprintComponent } from './components/policity/imprint/imprint.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
+  { path: '', component: LoginComponent },
   { path: 'resetPassword', component: ForgotPasswordComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'verification', component: VerificationComponent },
