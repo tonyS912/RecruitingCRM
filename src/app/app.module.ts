@@ -23,6 +23,13 @@ import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTableModule } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { LiveAnnouncer } from '@angular/cdk/a11y';
+import { MatSort, Sort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
+import { AfterViewInit, ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
 
 // Firespaß mit Angular 15 und TypeScript
 import { environment } from 'src/environment/environment'; //da wo unser schmutz drin ist
@@ -73,8 +80,21 @@ import { ResponseComponent } from './components/auth/response/response.component
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
-    MatTableModule
-  ],
+    MatTableModule,
+    MatMenuModule,
+    MatDividerModule,
+    MatExpansionModule,
+    MatDialogModule,
+    MatSnackBarModule,
+    MatSlideToggleModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatListModule,
+    MatTabsModule,
+    MatTooltipModule,
+    MatSortModule,
+    MatPaginatorModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

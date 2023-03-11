@@ -10,7 +10,7 @@
   background-color: $colorPrimaryVariant;
 }
 
-.demo-table {
+.mat-elevation-z8 {
   width: 100%;
 }
 
@@ -30,4 +30,8 @@
 
 .demo-row-is-clicked {
   font-weight: bold;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
 }
