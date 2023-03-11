@@ -21,6 +21,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatTableModule } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 // Firespaß mit Angular 15 und TypeScript
@@ -71,7 +72,8 @@ import { ResponseComponent } from './components/auth/response/response.component
     MatCardModule,
     MatFormFieldModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
