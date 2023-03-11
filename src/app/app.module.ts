@@ -30,7 +30,7 @@ import { provideAuth, getAuth } from '@angular/fire/auth'; //damit mein angular 
 import { provideFirestore, getFirestore } from '@angular/fire/firestore'; //damit mein angular firestore zeugs lesen kann
 import { provideStorage, getStorage } from '@angular/fire/storage';
 
-// Components 
+// Components
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -38,7 +38,6 @@ import { ImprintComponent } from './components/policity/imprint/imprint.componen
 import { DataProtectionComponent } from './components/policity/data-protection/data-protection.component';
 import { PushMessageComponent } from './components/push-message/push-message.component';
 import { StatusbarComponent } from './components/statusbar/statusbar.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ForgotPasswordComponent } from './components/auth/forgot-password/forgot-password.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { VerificationComponent } from './components/auth/verification/verification.component';
@@ -53,7 +52,6 @@ import { ResponseComponent } from './components/auth/response/response.component
     DataProtectionComponent,
     PushMessageComponent,
     StatusbarComponent,
-    SidebarComponent,
     ForgotPasswordComponent,
     RegisterComponent,
     VerificationComponent,
