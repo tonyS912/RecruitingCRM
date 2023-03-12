@@ -1,0 +1,67 @@
+@import "./src/style/color.scss";
+
+.mainContent {
+    height: calc(100% - 100px);
+    display: flex;
+}
+
+.mat-drawer.mat-drawer-side {
+  width: 400px;
+  background-color: $colorPrimaryVariant;
+}
+
+.mat-elevation-z8 {
+  width: 100%;
+}
+
+.mat-mdc-table {
+  table-layout: fixed;
+}
+
+.mat-mdc-row .mat-mdc-cell {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  cursor: pointer;
+}
+
+.mat-mdc-row:hover .mat-mdc-cell {
+  border-color: currentColor;
+}
+
+.demo-row-is-clicked {
+  font-weight: bold;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.sidenav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.8rem;
+  height: calc(100% - 10rem);
+  list-style-type: none;
+  padding: 2rem 0;
+
+  li {
+    cursor: pointer;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+
+    &:hover {
+      background-color: $colorPrimary;
+    }
+  }
+
+  .picture {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: $colorPrimary;
+    margin-right: 1rem;
+  }
+}
