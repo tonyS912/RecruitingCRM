@@ -8,6 +8,7 @@ import { VerificationComponent } from './components/auth/verification/verificati
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DataProtectionComponent } from './components/policity/data-protection/data-protection.component';
 import { ImprintComponent } from './components/policity/imprint/imprint.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'response', component: ResponseComponent },
   { path: 'imprint', component: ImprintComponent },
   { path: 'dataProtection', component: DataProtectionComponent },
-  { path: 'dashboard', component: DashboardComponent }
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'profile', component: ProfileComponent }
 ];
 
 @NgModule({

@@ -49,7 +49,8 @@ import { StatusbarComponent } from './components/statusbar/statusbar.component';
 import { ForgotPasswordComponent } from './components/auth/forgot-password/forgot-password.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { VerificationComponent } from './components/auth/verification/verification.component';
-import { ResponseComponent } from './components/auth/response/response.component'; //damit mein angular storage zeugs lesen kann
+import { ResponseComponent } from './components/auth/response/response.component';
+import { ProfileComponent } from './components/profile/profile.component'; //damit mein angular storage zeugs lesen kann
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { ResponseComponent } from './components/auth/response/response.component
     RegisterComponent,
     VerificationComponent,
     ResponseComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
