@@ -1,10 +1,12 @@
 <div class="mainContent">
   <mat-drawer-container class="example-container">
     <mat-drawer class="sidenav" mode="side" opened>
-      <section>Test</section>
-      <section>Test2</section>
-      <section>Test3</section>
-      <section>Test4</section>
+      <mat-list role="list">
+        <mat-list-item role="listitem">Item 1</mat-list-item>
+        <mat-list-item role="listitem">Item 2</mat-list-item>
+        <mat-list-item role="listitem">Item 3</mat-list-item>
+        <mat-list-item role="listitem">Item 4</mat-list-item>
+      </mat-list>
     </mat-drawer>
     <mat-drawer-content>
       <table
@@ -22,55 +24,68 @@
             mat-sort-header
             sortActionDescription="Sortiert nach Nummer"
           >
-            No.
+            Nr.
           </th>
           <td mat-cell *matCellDef="let element">{{ element.position }}</td>
         </ng-container>
 
-        <!-- Name Column -->
-        <ng-container matColumnDef="name">
+        <!-- firstName Column -->
+        <ng-container matColumnDef="Vorname">
           <th
             mat-header-cell
             *matHeaderCellDef
             mat-sort-header
-            sortActionDescription="Sortiert nach Name"
+            sortActionDescription="Sortiert nach Vorname"
           >
-            Name
+            Vorname
           </th>
-          <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+          <td mat-cell *matCellDef="let element">{{ element.firstName }}</td>
+        </ng-container>
+
+        <!-- lastName Column -->
+        <ng-container matColumnDef="Nachname">
+          <th
+            mat-header-cell
+            *matHeaderCellDef
+            mat-sort-header
+            sortActionDescription="Sortiert nach Nachname"
+          >
+            Nachname
+          </th>
+          <td mat-cell *matCellDef="let element">{{ element.lastName }}</td>
         </ng-container>
 
         <!-- Weight Column -->
-        <ng-container matColumnDef="gewicht">
+        <ng-container matColumnDef="job">
           <th
             mat-header-cell
             *matHeaderCellDef
             mat-sort-header
-            sortActionDescription="Sortiert nach Gewicht"
+            sortActionDescription="Sortiert nach Job"
           >
-            Gewicht
+            Job
           </th>
-          <td mat-cell *matCellDef="let element">{{ element.gewicht }}</td>
+          <td mat-cell *matCellDef="let element">{{ element.job }}</td>
         </ng-container>
 
         <!-- Symbol Column -->
-        <ng-container matColumnDef="symbol">
+        <ng-container matColumnDef="termin">
           <th
             mat-header-cell
             *matHeaderCellDef
             mat-sort-header
-            sortActionDescription="Sortiert nach Symbol"
+            sortActionDescription="Sortiert nach Termin"
           >
-            Symbol
+            termin
           </th>
-          <td mat-cell *matCellDef="let element">{{ element.symbol }}</td>
+          <td mat-cell *matCellDef="let element">{{ element.termin }}</td>
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
       </table>
       <mat-paginator
-        [pageSizeOptions]="[5, 10, 20]"
+        [pageSizeOptions]="[5, 10, 15]"
         showFirstLastButtons
         aria-label="Select page of periodic elements"
       >
