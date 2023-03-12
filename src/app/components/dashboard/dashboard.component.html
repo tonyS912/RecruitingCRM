@@ -1,12 +1,12 @@
 <div class="mainContent">
   <mat-drawer-container class="example-container">
     <mat-drawer class="sidenav" mode="side" opened>
-      <mat-list role="list">
-        <mat-list-item role="listitem">Item 1</mat-list-item>
-        <mat-list-item role="listitem">Item 2</mat-list-item>
-        <mat-list-item role="listitem">Item 3</mat-list-item>
-        <mat-list-item role="listitem">Item 4</mat-list-item>
-      </mat-list>
+      <ul class="sidenav-items">
+        <li>Dashboard</li>
+        <li>Stellenangebot</li>
+        <li>Profil</li>
+        <li>Interview</li>
+      </ul>
     </mat-drawer>
     <mat-drawer-content>
       <table
@@ -76,7 +76,7 @@
             mat-sort-header
             sortActionDescription="Sortiert nach Termin"
           >
-            termin
+            Termin
           </th>
           <td mat-cell *matCellDef="let element">{{ element.termin }}</td>
         </ng-container>
