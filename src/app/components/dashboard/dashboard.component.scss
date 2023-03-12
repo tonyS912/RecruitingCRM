@@ -56,4 +56,12 @@ th.mat-sort-header-sorted {
       background-color: $colorPrimary;
     }
   }
+
+  .picture {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: $colorPrimary;
+    margin-right: 1rem;
+  }
 }
