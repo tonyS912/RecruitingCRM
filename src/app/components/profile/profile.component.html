@@ -9,6 +9,124 @@
       </ul>
     </mat-drawer>
     <mat-drawer-content>
+      <div class="overview">
+        <img class="profile-img" src="../../../assets/svg/011-man.svg">
+        <mat-accordion>
+        <mat-expansion-panel (opened)="setStep(0)" [expanded]="true"  hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Persönliche Daten
+            </mat-panel-title>
+            <mat-panel-description>
+              Hier kannst du deine persönlichen Daten einsehen und bearbeiten.
+              <mat-icon><img src="../../../assets/svg/136-browser-51.svg"></mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+
+          <div>  <!-- First Area with Personal Informations  -->
+          <mat-form-field appearance="fill">
+            <mat-label>Vorname</mat-label>
+            <input matInput>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Nachname</mat-label>
+            <input matInput>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Alter</mat-label>
+            <input matInput type="number" min="1">
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Straße</mat-label>
+            <input matInput>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Hausnummer</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <br>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Postleitzahl</mat-label>
+            <input matInput type="number" min="1">
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Wohnort</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <br>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Telefon</mat-label>
+            <input matInput type="number" min="1">
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>E-Mail</mat-label>
+            <input matInput>
+          </mat-form-field>
+
+          </div>
+          <mat-action-row>
+            <button mat-button (click)="editModeToggle()">Bearbeiten</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+      </mat-accordion>
+      </div>
+      <mat-accordion class="example-headers-align">
+        <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Destination
+            </mat-panel-title>
+            <mat-panel-description>
+              Type the country name
+              <mat-icon>map</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Country</mat-label>
+            <input matInput>
+          </mat-form-field>
+
+          <mat-action-row>
+            <button mat-button color="warn" (click)="prevStep()">Previous</button>
+            <button mat-button color="primary" (click)="nextStep()">Next</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Day of the trip
+            </mat-panel-title>
+            <mat-panel-description>
+              Inform the date you wish to travel
+              <mat-icon>date_range</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+
+          <!-- <mat-form-field appearance="fill">
+            <mat-label>Datum wählen</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-hint>DD/MM/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>-->
+
+          <mat-action-row>
+            <button mat-button color="warn" (click)="prevStep()">Previous</button>
+            <button mat-button color="primary" (click)="nextStep()">End</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+
+      </mat-accordion>
     </mat-drawer-content>
   </mat-drawer-container>
 </div>

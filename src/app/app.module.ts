@@ -30,6 +30,7 @@ import { MatSort, Sort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { AfterViewInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 // Firespaß mit Angular 15 und TypeScript
 import { environment } from 'src/environment/environment'; //da wo unser schmutz drin ist
@@ -96,6 +97,7 @@ import { ProfileComponent } from './components/profile/profile.component'; //dam
     MatTooltipModule,
     MatSortModule,
     MatPaginatorModule,
+    MatDatepickerModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
